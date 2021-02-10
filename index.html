@@ -7,6 +7,7 @@
 
 
  <!-- Bootstrap CSS -->
+   <!-- build:css css/main.css -->
  <link
  rel="stylesheet"
  href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -18,11 +19,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
     />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="node_modules/font-awesome/css/font-awesome.min.css"
-    />
     <!-- Bootstrap Social -->
     <link
       rel="stylesheet"
@@ -30,7 +26,12 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-
+<!-- endbuild -->
+ <!-- Font Awesome -->
+ <link
+ rel="stylesheet"
+ href="node_modules/font-awesome/css/font-awesome.min.css"
+/>
 </head>
 <body>
 
@@ -72,7 +73,7 @@
 
   </section>
 
-  <section class="bg-light mb-5 pt-1">
+  <section class="bg-light mb-5 pt-2 pb-2">
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-6 px-5 mt-4">
@@ -141,13 +142,11 @@
 
 
 
-
-
-
-
    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <!-- endbuild -->
 </body>
 </html>
