@@ -11,14 +11,19 @@ a {
   color: black;
 }
 
+
+
 .btn-pink {
-  background-color:	rgb(230, 195, 199);
+  background-color:	rgb(230, 195, 194);
 }
 
 .pink {
   background-color:	rgb(250,218,221);
 }
 
+ div > a:hover {
+   color: #d85b82;
+ }
 
 
 .banner {
@@ -34,7 +39,7 @@ a {
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
- height: 90vh;
+ height: 85vh;;
 }
 
 .nav {
@@ -51,7 +56,16 @@ a {
   letter-spacing: 3px;
 }
 
-
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .learn-more{
+      margin-left: 0px;
+    }
+    
+}
 
 
 
