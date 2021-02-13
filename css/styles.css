@@ -172,10 +172,8 @@ box-shadow: 2px 2px 15px -1px rgba(0,0,0,0.40);
 }
 #contact{
     
-    font-family: 'Teko', sans-serif;
+  font-family: 'Teko', sans-serif;
   padding-top: 60px;
-  width: 100%;
-  width: 100vw;
   height: 550px;
   background: #2C3E50;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
@@ -184,6 +182,8 @@ background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, F
 
     color : #fff;    
 }
+
+
 
 .contact-section .col-md-6{
   width: 50%;
