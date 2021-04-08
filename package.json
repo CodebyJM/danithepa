@@ -4,7 +4,7 @@
   "description": "Git and Node",
   "main": "index.html",
   "scripts": {
-    "build": "npm run clean && npm run imagemin",
+    "build": "npm run imagemin",
    
     "imagemin": "imagemin img/",
    
