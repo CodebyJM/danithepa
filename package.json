@@ -4,15 +4,15 @@
   "description": "Git and Node",
   "main": "index.html",
   "scripts": {
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
-    "clean": "rimraf dist",
-    "imagemin": "imagemin img/* -o dist/img",
-    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "build": "npm run clean && npm run imagemin",
+   
+    "imagemin": "imagemin img/",
+   
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+   
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
   },
