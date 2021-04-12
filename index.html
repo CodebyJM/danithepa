@@ -34,6 +34,15 @@
 <!-- endbuild -->
  <!-- Font Awesome -->
 
+ <script>
+  $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })
+  
+  </script>
+
+  
+
 </head>
 <body>
 
@@ -41,7 +50,7 @@
     <div class="container p-5">
         <h1 class="display-2 text-white font-weight-bold mt-5 pb-2"><div class="rollIn"></div>Pre-PA Mentor</h1>
         <p class="lead text-white d">An Inside Scoop On All Things Pre-PA</p>
-        <a class="btn btn-pink btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-pink btn-lg" href="#learn" role="button">Learn more</a>
     </div>
   </div>
 
@@ -75,7 +84,7 @@
 
   </section>
 
-  <section class="bg-light pt-2 pb-2">
+  <section class="bg-light pt-2 pb-2" id="learn">
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-6 px-5 mt-4">
@@ -120,10 +129,10 @@
   
             <!-- column  -->
             <div class="col-lg-6">
-              <div class="card border-0 mb-4 p-3">
+              <div class="card border-0 mb-4 p-3 box-shadow-l">
                 <i class="icon-emotsmile display-6 text-info "></i>
-                <h5 class="font-weight-bolder mt-3 text-center"><mark class="pink"> Mock Interview: 
-                                  </mark></h5>
+                <h5 class="font-weight-bolder mt-3 text-center"> Mock Interview
+                                  </h5>
                 <p class="mt-3">
                   •  The interview process is one of the MOST important aspects of gaining acceptance into PA school. You impressed the admission committee on paper, now you must impress them in person!  
                   <br><br>
@@ -132,8 +141,30 @@
                   • I will provide constructive feedback at the end so you can be sure to kick-ass during your interview! 
                   <br><br>
                   • Having a mock interview is CRUCIAL for eliminating those nerves! <br><br>
-                 
 
+
+                <!-- Button trigger modal -->
+                <a role="button" class="btn btn-lg btn-info" id="reserveButton">Reserve Campsite</a>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
                   
                   
                 </p>
@@ -142,10 +173,10 @@
             <!-- column  -->
             <!-- column  -->
             <div class="col-lg-6">
-              <div class="card border-0 p-3 mb-4">
+              <div class="card border-0 p-3 mb-4 box-shadow-l">
                 <i class="icon-mouse display-6 text-info"></i>
-                <h5 class="font-weight-medium mt-3 text-center""><mark class="pink">Zoom Call:
-                                   </mark></h5>
+                <h5 class="font-weight-medium mt-3 text-center">Zoom Call
+                                  </h5>
                 <p class="mt-3">
 
                  
@@ -166,11 +197,11 @@
             <!-- column  -->
             <!-- column  -->
             <div class="col-lg-6">
-              <div class="card border-0 mb-4 p-3">
+              <div class="card border-0 mb-4 p-3 box-shadow-l">
                 <i class="icon-support display-6 text-info"></i>
-                <h5 class="font-weight-medium mt-3 text-center""><mark class="pink"> Personal Statement Review:
+                <h5 class="font-weight-medium mt-3 text-center"">Personal Statement Review
 
-                </mark></h5>
+              </h5>
                 <p class="mt-3">
                   • Amongst the many other challenges of applying to PA school, writing a personal statement is a difficult and intimidating process. You want to write a paper that conveys your character, motivation and qualities that separates you apart from the rest of the applicants. 
                   <br><br>
@@ -184,11 +215,11 @@
             <!-- column  -->
             <!-- column  -->
             <div class="col-lg-6">
-              <div class="card border-0 mb-4 p-3">
+              <div class="card border-0 mb-4 p-3 box-shadow-l">
                 <i class="icon-hourglass display-6 text-info"></i>
-                <h5 class="font-weight-medium mt-3 text-center""><mark class="pink">Resume Review:
+                <h5 class="font-weight-medium mt-3 text-center">Resume Review
 
-                </mark></h5>
+          </h5>
                 <p class="mt-3">
                   • Resumes are often the first impression for admission committees
                   <br><br>
@@ -213,12 +244,12 @@
 
   <section class="bg-light">
 
-    <div class="container-fluid">
+    <div class="container">
 
-      <div class="row">
-        <div class="col-md-4" style="border-right: rgb(230, 195, 194);">
+      <div class="row py-3">
+        <div class="col-md-4">
 
-          <h3 class="display-4 mt-5 pb-2 text-center" style="color: black; border-right: rgb(230, 195, 194);">JOIN <br> THE  <br> PACK </h3>
+          <h3 class="display-4 mt-5 pb-2 text-center" style="color: black; border-right: 10px solid #e6c3c2;">JOIN <br> THE  <br> PACK </h3>
 
 
 
@@ -226,7 +257,23 @@
 
       
 
-        <div class="col-md-5">
+        <div class="col-md-8">
+                    <div class="row">
+          <div class="col-md-12">
+            <h3 class="text-center pb-3" style="border-right: rgb(230, 195, 194 ,1.0);">Subscribe To My Youtube Channel @DaniThePA</h3>
+          </div>
+
+          </div>
+
+          
+
+          <div class="row align-items-end">
+          <div class="col-md-5"><iframe width="350" height="196.88" src="https://www.youtube.com/embed/xNHsK2NnKTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="col-md-5 mx-5  "><iframe width="350" height="196.88"  src="https://www.youtube.com/embed/2OS2aNGoKkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+         
+    
+         
+        </div>
 
 
 
