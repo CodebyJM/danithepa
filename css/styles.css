@@ -1,7 +1,12 @@
 @import url(/fonts.googleapis.com/css?family=Montserrat:300,400,500);
 
-html {
+html,
+body {
+  overflow-x: hidden;
   scroll-behavior: smooth;
+}
+body {
+  position: relative;
 }
 
 * {
